@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ManageUuuu</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="alert alert-dark" role="alert">
+                <h1 class="text-center fw-bold">MANAGE-Uu <i class="fa-solid fa-check-double fa-xl"
+                        style="color: #fdb10c;"></i></h1>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10 col-md-8 col-lg-6 text-center">
+                        <div class="input-group">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="Enter you Text " id="newTask">
+                                <label for="newTask">New Task Description</label>
+                            </div>
+                            <button class="btn fs-3" onclick="addTask()"><i class="fa-solid fa-square-plus fa-2xl"
+                                    style="color: #ff9214;"></i></i></button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <h2 class="text-center text-success fw-bold mt-5">Active</h2>
+            <hr class="custom-hr">
+            <ul class="mt-3 list-group" id="active"></ul>
+            <h2 class="text-center text-danger fw-bold mt-5">Completed</h2>
+            <hr class="custom-hr">
+            <ul class="mt-3 list-group" id="completed"></ul>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Personal JS: Compiled with TS -->
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
